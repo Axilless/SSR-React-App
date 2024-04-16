@@ -25,10 +25,10 @@
 
 # Run App
 
-### Npm i - install packages
+### npm i - install packages
 
-### Npm run build - building
+### npm run build - building
 
-### Npm run build:watch - building (watch mode)
+### npm run build:watch - building (watch mode)
 
-### Npm run start - watching build
+### npm run start - watching build

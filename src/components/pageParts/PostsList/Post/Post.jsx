@@ -6,7 +6,7 @@ import * as S from "./Post.styles";
 
 const Post = ({ post }) => {
   return (
-    <Paper elevation={2} sx={S.paper}>
+    <Paper elevation={4} sx={S.paper}>
       <Stack component="li" direction="column" gap={1}>
         <Typography variant="h4" sx={S.title}>
           {post.title}
