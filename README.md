@@ -23,7 +23,12 @@
                 .-##+.
                    ...+#+.. -->
 
-#Run App
-###Npm i - install packages
-###Npm run build - building (watch mode)
-###Npm run start - watching build
+# Run App
+
+### Npm i - install packages
+
+### Npm run build - building
+
+### Npm run build:watch - building (watch mode)
+
+### Npm run start - watching build

@@ -23,10 +23,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "clean": "rm -rf ./build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build": "rm -rf ./dist && node copyPublicFolder.js && webpack --config webpack.config.js --watch",
+    "build": "rm -rf ./dist && node copyPublicFolder.js && webpack --config webpack.config.js",
+    "build:watch": "rm -rf ./dist && node copyPublicFolder.js && webpack --config webpack.config.js --watch",
     "start": "nodemon ./dist/server.js"
   },
   "eslintConfig": {
