@@ -5,6 +5,10 @@ export const photoWrapper = {
   },
 };
 
+export const imageList = {
+  overflowY: "hidden",
+};
+
 export const imageItem = {
   maxWidth: "200px",
 };

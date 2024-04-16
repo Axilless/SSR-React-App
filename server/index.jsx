@@ -16,7 +16,7 @@ const app = express();
 
 let handler = createStaticHandler(routes);
 
-const PORT = process.env.PORT ?? 3001;
+const PORT = 3001;
 
 app.use("/static", express.static(__dirname));
 

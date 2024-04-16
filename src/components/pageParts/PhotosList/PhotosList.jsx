@@ -14,7 +14,11 @@ const PhotosList = ({ photos }) => {
   const isMediumDisplay = useMediaQuery("(max-width:780px)");
 
   return (
-    <ImageList cols={isSmallDisplay ? 1 : isMediumDisplay ? 2 : 3} gap={8}>
+    <ImageList
+      cols={isSmallDisplay ? 1 : isMediumDisplay ? 2 : 3}
+      gap={8}
+      sx={S.imageList}
+    >
       {photos.map((photo) => (
         <ImageListItem key={photo.id} sx={S.photoWrapper}>
           <img
