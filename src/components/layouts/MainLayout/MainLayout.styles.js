@@ -6,6 +6,7 @@ export const wrapper = {
   background: grey.G200,
   padding: "16px 24px",
   minHeight: "calc(100vh - 32px)",
+  margin: 0,
 
   "*": {
     boxSizing: "border-box",
@@ -18,12 +19,11 @@ export const wrapper = {
     width: "0.5em",
   },
   "*::-webkit-scrollbar-track": {
-    backgroundColor: "transparent",
+    background: "transparent",
   },
   "*::-webkit-scrollbar-thumb": {
-    backgroundColor: "rgba(119, 136, 153, 0.6)",
+    background: "rgba(119, 136, 153, 0.6)",
     borderRadius: "4px",
-    boxShadow: "0 0 6px rgba(0, 0, 0, 0.3)",
   },
 };
 
