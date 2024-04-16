@@ -27,6 +27,7 @@
     "eject": "react-scripts eject",
     "build": "rm -rf ./dist && node copyPublicFolder.js && webpack --config webpack.config.js",
     "build:watch": "rm -rf ./dist && node copyPublicFolder.js && webpack --config webpack.config.js --watch",
+    "build:production": "rm -rf ./dist && node copyPublicFolder.js && webpack --config webpack.config.js --mode=production",
     "start": "nodemon ./dist/server.js"
   },
   "eslintConfig": {
