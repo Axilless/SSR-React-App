@@ -11,6 +11,9 @@ const MetaTags = ({ title, description, keywords }) => {
       <meta name="description" content={description} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
+      <meta content="true" name="HandheldFriendly" />
+      <meta content="width" name="MobileOptimized" />
+      <meta content="yes" name="apple-mobile-web-app-capable" />
 
       <meta name="keywords" content={keywords.join(", ")}></meta>
     </Helmet>

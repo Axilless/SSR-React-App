@@ -13,6 +13,18 @@ export const wrapper = {
   "*:hover": {
     transition: "0.2s ease-in-out",
   },
+
+  "*::-webkit-scrollbar": {
+    width: "0.5em",
+  },
+  "*::-webkit-scrollbar-track": {
+    backgroundColor: "transparent",
+  },
+  "*::-webkit-scrollbar-thumb": {
+    backgroundColor: "rgba(119, 136, 153, 0.6)",
+    borderRadius: "4px",
+    boxShadow: "0 0 6px rgba(0, 0, 0, 0.3)",
+  },
 };
 
 export const header = {

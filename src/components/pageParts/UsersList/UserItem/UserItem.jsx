@@ -21,7 +21,11 @@ const UserItem = ({ user, navigate }) => {
           {user.name}
         </Typography>
 
-        <Link to={`mailto: ${user.email.toLowerCase()}`}>
+        <Link
+          to={`mailto: ${user.email.toLowerCase()}`}
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <Typography variant="p" component="p" sx={S.email}>
             {user.email}
           </Typography>
