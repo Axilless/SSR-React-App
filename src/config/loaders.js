@@ -25,11 +25,21 @@ export const albumsLoader = async ({ request }) => {
   const albumsResponse = await http.get(endpoints.userAlbums(userID));
   const photosResponse = await http.get(endpoints.photos);
 
+  // Creating an object for quick access by key
+  const photoAlbumsObj = {};
+  photosResponse.data.forEach((photo) => {
+    const key = photo.albumId;
+
+    if (Boolean(photoAlbumsObj[key])) {
+      photoAlbumsObj[key].push(photo);
+    } else {
+      photoAlbumsObj[key] = [photo];
+    }
+  });
+
   const albums = await albumsResponse.data.map((album) => ({
     ...album,
-    photos: photosResponse.data.filter(
-      (photo) => Number(photo.albumId) === Number(album.id)
-    ),
+    photos: photoAlbumsObj[album.id],
   }));
 
   return { albums: albums, user: userResponse.data };
